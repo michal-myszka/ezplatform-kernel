@@ -188,7 +188,7 @@ class ContentMapper
 
         if (!$isFieldUpdated && !$isLanguageNew) {
             $fieldValue = $previousField->value;
-        } else if (!$isFieldUpdated && $isLanguageNew && !$fieldDefinition->isTranslatable) {
+        } elseif (!$isFieldUpdated && $isLanguageNew && !$fieldDefinition->isTranslatable) {
             $fieldValue = $previousField->value;
         } elseif ($isFieldUpdated) {
             $fieldValue = $newField->value;

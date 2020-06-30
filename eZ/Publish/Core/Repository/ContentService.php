@@ -1304,7 +1304,7 @@ class ContentService implements ContentServiceInterface
 
                 if (!$isFieldUpdated && !$isLanguageNew) {
                     $isRetained = true;
-                } else if (!$isFieldUpdated && $isLanguageNew && !$fieldDefinition->isTranslatable) {
+                } elseif (!$isFieldUpdated && $isLanguageNew && !$fieldDefinition->isTranslatable) {
                     $isCopied = true;
                 }
 
